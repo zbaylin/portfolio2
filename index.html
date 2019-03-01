@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/public/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <script src="/public/main.js"></script>
+  <title>Zach Baylin: Software Developer</title>
+</head>
+<body>
+  <div id="root" class="centered-v-h">
+    <div id="main-window" class="window">
+      <div class="top-bar">
+        <div>
+          <p class="window-title">
+            Zach Baylin: Software Developer and Music Fanatic
+          </p>
+        </div>
+        <div class="button-bar">
+          <button onClick="playStartup()" class="menu-button centered-v-h">
+            <i class="fas fa-question"></i>
+          </button>
+          <button onClick="window.close()" class="menu-button centered-v-h">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+      </div>
+      <div class="window-content">
+        <div class="column">
+          <img style="width: 200px; height: auto" src="/public/img/me.gif" class="pixel-img shadow border">
+          <p style="margin-top: 3px;" class="text-center title">I'm Zach.</p>
+          <table class="">
+            <tr>
+              <td><i class="fab fa-twitter"></i></td>
+              <td><a href="https://twitter.com/zachbaylin">@zachbaylin</a></td>
+            </tr>
+            <tr>
+              <td><i class="fab fa-github"></i></td>              
+              <td><a href="https://github.com/zbaylin">@zbaylin</a></td>
+            </tr>
+            <tr>
+              <td><i class="far fa-envelope"></i></td>              
+              <td><a href="mailto:me@zachbayl.in">me@zachbayl.in</a></td>
+            </tr>
+          </table>
+        </div>
+        <div class="column">
+          <select id="project-select" class="select-m border shadow" multiple>
+            <option value="about" selected>About Me</option>
+            <option class="header" disabled>My Projects</option>
+            <option value="rolltrax"> - Rolltrax</option>
+            <option value="bibliotech"> - bibliotech</option>
+            <option value="security-py"> - security-py</option>
+            <option value="rofi-wifi-menu"> - rofi-wifi-menu</option>
+            <option value="resume">R&#233;sum&#233;</option>
+          </select>
+        </div>
+        <div style="width: 100%;" class="column">
+          <div id="main-info-window" class="info-window border shadow">
+          </div>
+          <button disabled id="learn-more-button" class="button full-width">Learn More!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
